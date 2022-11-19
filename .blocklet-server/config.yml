@@ -1,0 +1,41 @@
+node:
+  name: Blocklet Server [zongzheng]
+  description: Blocklet Server on [192.168.152.181]
+  mode: debug
+  version: 1.8.36
+  sk: >-
+    U2FsdGVkX1/r/2R2vCeOT+alAufkZ+Xj5JusYjBUyhIwNSLTRVicmRFYLdZ7N3f/VBcxJiJbRlTiHaDsXSD6KkrVFpaA8EMpn7N9Uzz7v9g2WiHEXF9gwSEapr+k4gswfELScFISKcrOVytj8v8YUVeUUNndSc0VpT1JJATJMbhDcrwU89PwHNfKYb5VS9JeQdlIZkA9U0Lv/UpURarWfA==
+  pk: '0x249006ee7145b8ee4f0f0efc7ebfe1c07f781699f1ff8ee2b32046b1af2ffcdc'
+  did: zNKiddKD9e4WZ6DJrxw67PWdyPkgnmCMPMhK
+  port: 8089
+  secret: '0x8e28aea0b62e9ef98f8748f82894daf2f8b974e11a54aeb80d2644fed120e493'
+  owner:
+    pk: ''
+    did: ''
+  ownerNft:
+    holder: ''
+    issuer: ''
+  routing:
+    provider: default
+    adminPath: /admin/
+    headers:
+      X-Powered-By: '"Blocklet Server/1.8.36"'
+    maxUploadFileSize: 500
+    https: true
+    httpPort: 80
+    httpsPort: 443
+    wildcardCertHost: https://releases.arcblock.io/
+    ipWildcardDomain: '*.ip.abtnet.io'
+  runtimeConfig:
+    daemonMaxMemoryLimit: 819
+    proxyMaxMemoryLimit: 800
+    blockletMaxMemoryLimit: 819
+  didRegistry: https://registry.abtnet.io
+  didDomain: did.abtnet.io
+  enablePassportIssuance: true
+  trustedPassports: []
+  webWalletUrl: https://web.abtwallet.io
+blocklet:
+  port: 8089
+initialize:
+  blocklets: []

@@ -10,10 +10,11 @@ const getDevNextConfig = () => {
   let assetPrefix = `${appUrl}${mountPoint}`.replace('http://', 'https://');
 
   let devWithBlockletServer = process.env.hasOwnProperty('BLOCKLET_DEV_MOUNT_POINT');
+  console.log(assetPrefix);
 
   return whenDev && devWithBlockletServer
     ? {
-        assetPrefix: assetPrefix, // When the dev mode as component, this line required
+        assetPrefix: assetPrefix || 'http://localhost:8090', // When the dev mode as component, this line required
         basePath: '',
       }
     : {};

@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import '../styles/globals.css';
+import { ChakraProvider } from '@chakra-ui/react';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ChakraProvider>
       <Head>
         <title>{process.env.APP_TITLE}</title>
         <link rel="icon" href={`${process.env.PUBLIC_URL || ''}/favicon.ico`} />
@@ -14,7 +15,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Script src="__blocklet__.js" />
       <Component {...pageProps} />
-    </>
+    </ChakraProvider>
   );
 }
 
