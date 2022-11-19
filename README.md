@@ -151,3 +151,7 @@ After developing a blocklet, you may need to bundle it. Use `npm run bundle` com
 
 The code is licensed under the Apache 2.0 license found in the
 [LICENSE](LICENSE) file.
+
+
+
+Visit http://XXX/block/${hash} example: http://localhost:3000/block/00000000000000000007878ec04bb2b2e12317804810f4c26033585b3f81ffaa
